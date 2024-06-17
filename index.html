@@ -1,33 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>生成随机数</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Image</title>
     <style>
         body {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
         }
-        #randomNumber {
-            font-size: 2em;
-            margin-top: 20px;
+        img {
+            max-width: 100%;
+            max-height: 100%;
         }
     </style>
 </head>
 <body>
-    <button onclick="generateRandomNumber()">生成随机数</button>
-    <p id="randomNumber"></p>
-
-    <script>
-        function generateRandomNumber() {
-            var randomNumber = Math.random();
-            document.getElementById("randomNumber").innerHTML = randomNumber;
-        }
-    </script>
+    <img src="https://www.gov.cn/guoqing/2017-07/28/W020230227379318009675.jpg" alt="Centered Image">
 </body>
 </html>
